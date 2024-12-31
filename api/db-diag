@@ -1,0 +1,24 @@
+Table model {
+  id integer [primary key]
+  title string
+}
+
+Table session {
+  id integer [primary key]
+  userId string
+  title string
+  model string
+}
+
+Table users {
+  id integer [primary key]
+  email varchar
+  password varchar
+}
+
+Table chat {
+  id integer [primary key]
+  userId string
+  title string
+  model string
+}
